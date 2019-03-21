@@ -1,0 +1,232 @@
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mHP Linux Imaging and Printing System (ver. 3.18.7)[0m
+hplip-install[20000]: info: :[01mHPLIP Installer ver. 5.1[0m
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :Copyright (c) 2001-15 HP Development Company, LP
+hplip-install[20000]: info: :This software comes with ABSOLUTELY NO WARRANTY.
+hplip-install[20000]: info: :This is free software, and you are welcome to distribute it
+hplip-install[20000]: info: :under certain conditions. See COPYING file for more details.
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :Installer log saved in: [01mhplip-install_Wed-05-Sep-2018_15:56:29.log[0m
+hplip-install[20000]: info: :
+error: You are running the installer as root. It is highly recommended that you run the installer as
+error: a regular (non-root) user. Do you still wish to continue?
+hplip-install[20000]: info: :
+note: Defaults for each question are maked with a '*'. Press <enter> to accept the default.
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mINSTALLATION MODE[0m
+hplip-install[20000]: info: :[01m-----------------[0m
+hplip-install[20000]: info: :Automatic mode will install the full HPLIP solution with the most common options.
+hplip-install[20000]: info: :Custom mode allows you to choose installation options to fit specific requirements.
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mINTRODUCTION[0m
+hplip-install[20000]: info: :[01m------------[0m
+hplip-install[20000]: info: :This installer will install HPLIP version 3.18.7 on your computer.
+hplip-install[20000]: info: :Please close any running package management systems now (YaST, Adept, Synaptic, Up2date, etc).
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mDISTRO/OS CONFIRMATION[0m
+hplip-install[20000]: info: :[01m----------------------[0m
+hplip-install[20000]: info: :Distro appears to be Ubuntu 16.04.
+
+error: Please press <enter> or enter 'y', 'n', or 'q'.
+hplip-install[20000]: info: :
+Initializing. Please wait...
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mINSTALLATION NOTES[0m
+hplip-install[20000]: info: :[01m------------------[0m
+hplip-install[20000]: info: :Enable the universe/multiverse repositories. Also be sure you are using the Ubuntu "Main" Repositories. See: https://help.ubuntu.com/community/Repositories/Ubuntu for more information.  Disable the CD-ROM/DVD source if you do not have the Ubuntu installation media inserted in the drive.
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mSECURITY PACKAGES[0m
+hplip-install[20000]: info: :[01m-----------------[0m
+hplip-install[20000]: info: :AppArmor is installed. 
+hplip-install[20000]: info: :AppArmor protects the application from external intrusion attempts making the application secure
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mRUNNING PRE-INSTALL COMMANDS[0m
+hplip-install[20000]: info: :[01m----------------------------[0m
+hplip-install[20000]: info: :OK
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mMISSING DEPENDENCIES[0m
+hplip-install[20000]: info: :[01m--------------------[0m
+hplip-install[20000]: info: :Following dependencies are not installed. HPLIP will not work if all REQUIRED dependencies are not installed and some of the HPLIP features will not work if OPTIONAL dependencies are not installed.
+hplip-install[20000]: info: :Package-Name         Component            Required/Optional   
+hplip-install[20000]: info: :libnetsnmp-devel     network              REQUIRED            
+hplip-install[20000]: info: :sane-devel           scan                 REQUIRED            
+hplip-install[20000]: info: :pil                  scan                 OPTIONAL            
+hplip-install[20000]: info: :pyqt4-dbus           gui_qt4              REQUIRED            
+hplip-install[20000]: info: :python-devel         base                 REQUIRED            
+hplip-install[20000]: info: :cups-devel           base                 REQUIRED            
+hplip-install[20000]: info: :python-dbus          fax                  REQUIRED            
+hplip-install[20000]: info: :reportlab            fax                  OPTIONAL            
+hplip-install[20000]: info: :pyqt4                gui_qt4              REQUIRED            
+hplip-install[20000]: info: :libusb               base                 REQUIRED            
+hplip-install[20000]: info: :libtool              base                 REQUIRED            
+hplip-install[20000]: info: :cups-image           base                 REQUIRED            
+hplip-install[20000]: info: :python-notify        gui_qt4              OPTIONAL            
+hplip-install[20000]: info: :xsane                scan                 OPTIONAL            
+hplip-install[20000]: info: :libjpeg              base                 REQUIRED            
+hplip-install[20000]: info: :dbus                 fax                  REQUIRED            
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mINSTALL MISSING REQUIRED DEPENDENCIES[0m
+hplip-install[20000]: info: :[01m-------------------------------------[0m
+note: Installation of dependencies requires an active internet connection.
+warning: Missing REQUIRED dependency: python-devel (Python devel - Python development files)
+warning: Missing REQUIRED dependency: cups-devel (CUPS devel- Common Unix Printing System development files)
+warning: Missing REQUIRED dependency: libusb (libusb - USB library)
+warning: Missing REQUIRED dependency: libtool (libtool - Library building support services)
+warning: Missing REQUIRED dependency: cups-image (CUPS image - CUPS image development files)
+warning: Missing REQUIRED dependency: libjpeg (libjpeg - JPEG library)
+warning: Missing REQUIRED dependency: libnetsnmp-devel (libnetsnmp-devel - SNMP networking library development files)
+warning: Missing REQUIRED dependency: pyqt4-dbus (PyQt 4 DBus - DBus Support for PyQt4)
+warning: Missing REQUIRED dependency: pyqt4 (PyQt 4- Qt interface for Python (for Qt version 4.x))
+warning: Missing REQUIRED dependency: python-dbus (Python DBus - Python bindings for DBus)
+warning: Missing REQUIRED dependency: dbus (DBus - Message bus system)
+warning: Missing REQUIRED dependency: sane-devel (SANE - Scanning library development files)
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mINSTALL MISSING OPTIONAL DEPENDENCIES[0m
+hplip-install[20000]: info: :[01m-------------------------------------[0m
+note: Installation of dependencies requires an active internet connection.
+warning: Missing OPTIONAL dependency for option 'gui_qt4': python-notify (Python libnotify - Python bindings for the libnotify Desktop notifications)
+warning: Missing OPTIONAL dependency for option 'fax': reportlab (Reportlab - PDF library for Python)
+warning: Missing OPTIONAL dependency for option 'scan': pil (PIL - Python Imaging Library (required for commandline scanning with hp-scan))
+warning: Missing OPTIONAL dependency for option 'scan': xsane (xsane - Graphical scanner frontend for SANE)
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mCHECKING FOR NETWORK CONNECTION[0m
+hplip-install[20000]: info: :[01m-------------------------------[0m
+hplip-install[20000]: info: :Network connection present.
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mRUNNING PRE-PACKAGE COMMANDS[0m
+hplip-install[20000]: info: :[01m----------------------------[0m
+hplip-install[20000]: info: :sudo dpkg --configure -a (Pre-depend step 1)
+hplip-install[20000]: info: :sudo apt-get install --yes --force-yes -f (Pre-depend step 2)
+warning: An error occurred running 'sudo apt-get update'
+hplip-install[20000]: info: :sudo apt-get update (Pre-depend step 3)
+hplip-install[20000]: info: :OK
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mDEPENDENCY AND CONFLICT RESOLUTION[0m
+hplip-install[20000]: info: :[01m----------------------------------[0m
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes python-dev'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes libcups2-dev'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes cups-bsd'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes cups-client'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes libusb-1.0.0-dev'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes libtool'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes libtool-bin'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes libcupsimage2-dev'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes libjpeg-dev'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes libsnmp-dev'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes snmp-mibs-downloader'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes python-qt4-dbus'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes gtk2-engines-pixbuf'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes python-qt4'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes python-dbus'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes python-gobject'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes libdbus-1-dev'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes libsane-dev'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes python-notify'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes python-reportlab'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes python-imaging'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes gtk2-engines-pixbuf'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Running 'sudo apt-get install --assume-yes xsane'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Starting uninstallation...
+hplip-install[20000]: info: :HPLIP uninstallation is completed
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mRUNNING POST-PACKAGE COMMANDS[0m
+hplip-install[20000]: info: :[01m-----------------------------[0m
+hplip-install[20000]: info: :OK
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mRE-CHECKING DEPENDENCIES[0m
+hplip-install[20000]: info: :[01m------------------------[0m
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mPRE-BUILD COMMANDS[0m
+hplip-install[20000]: info: :[01m------------------[0m
+hplip-install[20000]: info: :OK
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mBUILD AND INSTALL[0m
+hplip-install[20000]: info: :[01m-----------------[0m
+hplip-install[20000]: info: :Running './configure --with-hpppddir=/usr/share/ppd/HP --libdir=/usr/lib --prefix=/usr --enable-qt4 --disable-qt5 --enable-doc-build --disable-cups-ppd-install --disable-foomatic-drv-install --disable-libusb01_build --disable-foomatic-ppd-install --disable-hpijs-install --disable-class-driver --disable-udev_sysfs_rules --disable-policykit --enable-cups-drv-install --enable-hpcups-install --enable-network-build --enable-dbus-build --enable-scan-build --enable-fax-build --enable-apparmor_build'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Command completed successfully.
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :Running 'make clean'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Command completed successfully.
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :Running 'make'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Command completed successfully.
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :Running 'sudo make install'
+Please wait, this may take several minutes...
+hplip-install[20000]: info: :Command completed successfully.
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+Build complete.
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mPOST-BUILD COMMANDS[0m
+hplip-install[20000]: info: :[01m-------------------[0m
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mCLOSE HP_SYSTRAY[0m
+hplip-install[20000]: info: :[01m----------------[0m
+hplip-install[20000]: info: :Sending close message to hp-systray (if it is currently running)...
+hplip-install[20000]: info: :OK
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mHPLIP UPDATE NOTIFICATION[0m
+hplip-install[20000]: info: :[01m-------------------------[0m
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mRESTART OR RE-PLUG IS REQUIRED[0m
+hplip-install[20000]: info: :[01m------------------------------[0m
+hplip-install[20000]: info: :If you are installing a USB connected printer, and the printer was plugged in when you started this installer, you will need to either restart    
+hplip-install[20000]: info: :your PC or unplug and re-plug in your printer (USB cable only). If you choose to restart, run this command after restarting: hp-setup (Note: If   
+hplip-install[20000]: info: :you are using a parallel connection, you will have to restart your PC. If you are using network/wireless, you can ignore and continue).           
+hplip-install[20000]: info: :
+note: 
+note: IMPORTANT! Make sure to save all work in all open applications before restarting!
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :
+hplip-install[20000]: info: :[01mRE-STARTING HP_SYSTRAY[0m
+hplip-install[20000]: info: :[01m----------------------[0m
