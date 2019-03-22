@@ -16,6 +16,27 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
+DROP TABLE IF EXISTS `lti_consumer_canvas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `lti_consumer_canvas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `secret` varchar(45) DEFAULT NULL,
+  `service` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `lti_consumer_canvas`
+--
+
+LOCK TABLES `lti_consumer_canvas` WRITE;
+/*!40000 ALTER TABLE `lti_consumer_canvas` DISABLE KEYS */;
+INSERT INTO `lti_consumer_canvas` VALUES (1,'25f9e794323b453885f5181f1b624d0b','pdf'),(2,'25f9e794323b453885f5181f1b624d0b','video');
+/*!40000 ALTER TABLE `lti_consumer_canvas` ENABLE KEYS */;
+UNLOCK TABLES;
+
 --
 -- Database: `tp_lti`
 --

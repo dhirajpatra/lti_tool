@@ -3,7 +3,7 @@
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', true);
 session_start();
-include_once __DIR__ . "/library/config.php";
+//include_once __DIR__ . "/library/config.php";
 
 // http://localhost/lti_v2/ltilaunchcanvasrequest.php?secret=25f9e794323b453885f5181f1b624d0b&service=pdf&id=1059
 
@@ -17,15 +17,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'get') 
     $_SESSION['secret'] = $getParams['secret'];
 
     // need to check and authorise from database
-//    $tpDBObj = new tpdatabase(); //connection to TP DB
-//    $consumerIdCondition = " secret = '".$getParams['secret']."' AND service = '".$getParams['service']."'";
-//    $consumerIdFields = array('*');
-//    $result = $tpDBObj->select(LTI_CONSUMER_CANVAS, $consumerIdFields, $consumerIdCondition);
+    $tpDBObj = new tpdatabase(); //connection to TP DB
+    $consumerIdCondition = " secret = '".$getParams['secret']."' AND service = '".$getParams['service']."'";
+    $consumerIdFields = array('*');
+    $result = $tpDBObj->select(LTI_CONSUMER_CANVAS, $consumerIdFields, $consumerIdCondition);
 
-//    if (!empty($result[0])) {
-//        switch ($result[0]['service']) {
-    if(!empty($getParams['secret'])) {
-        switch ($getParams['service']) {
+    if (!empty($result[0])) {
+        switch ($result[0]['service']) {
+//    if(!empty($getParams['secret'])) {
+//        switch ($getParams['service']) {
             case 'pdf':
                 $url = 'http://localhost/lti_v2/tp/tp_registration.php?action=course_1';
                 //$api = 'http://phoenix-dev-pcc.hlrptech.com/api/v1/assets/'.$getParams['id'].'/retrievePath';
